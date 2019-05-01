@@ -53,6 +53,11 @@ a.btn {
     color: #fff;
     border: 1px solid #fff;
     padding: 4px 15px;
+    transition: background-color .5s;
+}
+
+a.btn:hover {
+    background-color: rgba(0, 0, 0, .3);
 }
 
 /* Header */
@@ -74,7 +79,7 @@ header a.logo {
     left: 20px;
 }
 
-header a.log span { /*Anchor link is invisible*/
+header a.logo span { /*Anchor link is invisible*/
     display: none;
 }
 
@@ -89,4 +94,52 @@ header div.hero h1 {
     line-height: 1em;
     margin: 0 0 30px 0;
     color: #fff;
+}
+
+/* Section - All */
+section {
+    padding: 0 30px;
+}
+
+/* Section - Main */
+section.main {
+    margin-top: 20px;
+    margin-bottom: 30px;
+    padding: 0;
+}
+
+section.main aside {
+    width: 33%;
+    float: left;
+    text-align: center;
+}
+
+section.main .content {
+    margin: 15px;
+    background: no-repeat center top;
+    background-size: 75px 75px;
+    padding-top: 85px;
+    float: left;
+}
+
+section.main aside h3 a {
+    color: #000;
+    text-decoration: none;
+}
+
+section.main aside h3 a:hover {
+    color: #000;
+    text-decoration: underline;
+}
+
+section.main aside .content.trending {
+    background-image: url(../images/icon_star.svg);
+}
+
+section.main aside .content.find-it {
+    background-image: url(../images/icon_marker.svg);
+}
+
+section.main aside .content.tools {
+    background-image: url(../images/icon_gear.svg);
 }
