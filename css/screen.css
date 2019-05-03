@@ -105,6 +105,12 @@ section {
     padding: 0 30px;
 }
 
+section::after {
+    content: '';
+    display: block;
+    clear: both;
+}
+
 /* Section - Main */
 section.main {
     margin-top: 20px;
@@ -123,7 +129,6 @@ section.main .content {
     background: no-repeat center top;
     background-size: 75px 75px;
     padding-top: 85px;
-    float: left;
 }
 
 section.main aside h3 a {
@@ -146,4 +151,12 @@ section.main aside .content.find-it {
 
 section.main aside .content.tools {
     background-image: url(../images/icon_gear.svg);
+}
+
+/* Section - Atomsphere */
+section.atmosphere {
+    background-color: #cc6633;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    color: #fff;
 }
