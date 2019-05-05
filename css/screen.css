@@ -275,6 +275,7 @@ nav ul {
 nav ul li:hover {
     background-color: #2b0306;
 }
+
 nav ul li:hover > ul {
     display: block;
 }
@@ -312,7 +313,7 @@ nav ul ul ul {
 
 /* top-level */
 nav > ul {
-    padding-left: 200px;
+    padding-left: 300px;
 }
 
 nav > ul > li {
@@ -322,6 +323,28 @@ nav > ul > li {
 nav > ul > li > a {
     width: auto;
     padding: 10px 20px 15px 20px;
+}
+
+/* Indication arrow */
+nav a[aria-haspopup="true"]::after {
+    content: '';
+    display: block;
+    width: 0px;
+    height: 0px;
+    position: absolute;
+    top: 16px; right: 15px;
+    border-top: 4px solid transparent;
+    border-bottom: 4px solid transparent;
+    border-left: 4px solid #fff;
+}
+
+/* Indication arrow */
+nav > ul > li > a[aria-haspopup="true"]::after {
+    border-left: 4px solid transparent;
+    border-right: 4px solid transparent;
+    border-top: 4px solid #fff;
+    left: 20px; right: auto;
+    bottom: 6px; top: auto;
 }
 
 /* Footer */
